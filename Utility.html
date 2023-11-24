@@ -1,0 +1,109 @@
+<script>
+  const ShowDate = () => {
+    const now = new Date();
+    const date = now.toLocaleDateString("en-US", {
+      weekday: "short",
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
+    const time = now.toLocaleTimeString("en-US", {
+      hour: "numeric",
+      minute: "numeric",
+      hour12: true,
+    });
+    document.getElementById("datetime").innerHTML = `${date}, ${time}`;
+  };
+
+  ShowDate();
+  setInterval(ShowDate, 1000);
+</script>
+<!-- <div style="background-color:#F2F3F5" class="row text-center">
+  <div class="col-2" id="datetime"></div>
+  <div class="col-1"><a
+    class="text-decoration-none text-dark"
+    lang=""
+    href="https://www.xn--i1bj3fqcyde.xn--11b7cb3a6a.xn--h2brj9c/"
+    onclick="return confirm('You are being redirected to an external website. Please note that Ministry of Indian Railways cannot be held responsible for external websites content &amp; privacy policies.');"
+    aria-label="भारत सरकार - External site that opens in a new window"
+    title="भारत सरकार - External site that opens in a new window"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="font-size:14px"
+  >
+    भारत सरकार
+  </a></div>
+  <div class="col-2"><a
+    lang="en"
+    class="text-decoration-none text-dark"
+    href="https://www.india.gov.in/"
+    onclick="return confirm('You are being redirected to an external website. Please note that Ministry of Indian Railways cannot be held responsible for external websites content &amp; privacy policies.');"
+    aria-label="Government of India - External site that opens in a new window"
+    title="Government of India - External site that opens in a new window"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="font-size:14px;font-weight: 500;font-family: 'Open Sans', sans-serif;"
+
+  >
+    Government of India
+  </a></div>
+  <div class="col-7">4</div>
+</div> -->
+
+<div class="container-fluid">
+  <div  style="height: 40px; background-color: #e3e4e0" class=" utilrow row p-1">
+    <div  style="
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+  " class="col-lg-2 fw-bold" id="datetime"></div>
+    <div style="margin-left: -22px" class="col-lg-2 col-sm-12">
+      <span
+        ><a
+          class="text-decoration-none text-dark mx-1"
+          lang=""
+          href="https://www.xn--i1bj3fqcyde.xn--11b7cb3a6a.xn--h2brj9c/"
+          onclick="return confirm('You are being redirected to an external website. Please note that Ministry of Indian Railways cannot be held responsible for external websites content &amp; privacy policies.');"
+          aria-label="भारत सरकार - External site that opens in a new window"
+          title="भारत सरकार - External site that opens in a new window"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="font-size: 11px"
+        >
+          भारत सरकार
+        </a></span
+      >
+      | <i class="mdi mdi-alarm"></i>
+      <span class="animated fadeInDown mx-1"
+        ><a
+          lang="en"
+          class="text-decoration-none text-dark fw-bold"
+          href="https://www.india.gov.in/"
+          onclick="return confirm('You are being redirected to an external website. Please note that Ministry of Indian Railways cannot be held responsible for external websites content &amp; privacy policies.');"
+          aria-label="Government of India - External site that opens in a new window"
+          title="Government of India - External site that opens in a new window"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="
+            font-size: 10px;
+            font-weight: 500;
+            font-family: 'Open Sans', sans-serif;
+          "
+        >
+          GOVERNMENT OF INDIA
+        </a></span
+      >
+    </div>
+    <div class="col-lg-6 col-sm-12 text-end">
+      <a  style="
+      font-size: 13px;
+      font-weight: 500;
+      font-family: 'Open Sans', sans-serif;
+    " href="#header" class="text-decoration-none text-dark mx-2">Skip to Main Content</a>|<a  style="
+            font-size: 13px;
+            font-weight: 500;
+            font-family: 'Open Sans', sans-serif;
+          " href="#navbar" class="h6 text-decoration-none text-dark mx-2"> Skip to header</a>
+    </div>
+  </div>
+</div>

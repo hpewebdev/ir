@@ -1,0 +1,355 @@
+<style>
+    /* Dropdown Button */
+    .dropbtn {
+        background-color: #024;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #024;
+        color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #0693e3;
+        color: white
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {
+        background-color: #024;
+    }
+
+</style>
+<nav  class="navbar navbar-expand-sm bg-color navbar-dark">
+    <div class="container">
+        <button title="Home" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link " style="background-color: #06b1ac;" href="#">Home</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Ministry of
+                        Railways</a>
+                    <ul class="dropdown-menu bg-color">
+                        <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                href="https://indianrailways.gov.in/railwayboard/">Railway
+                                Board</at>
+                        </li>
+                        <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                href="https://indianrailways.gov.in/OthersRailway.html">Other
+                                Railway</a></li>
+
+                    </ul>
+                </li> -->
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Ministry of
+                                Railways</a>
+                        <ul class="dropdown-menu">
+                            <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                    href="https://indianrailways.gov.in/railwayboard/">Railway
+                                    Board</a></li>
+                            <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                    href="./otherRailways.html">Other
+                                    Railways</a>
+                            </li>
+    
+                        </ul>
+                    </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Zonal
+                        Railways</a>
+                    <ul class="dropdown-menu">
+                        <div class="d-md-flex-column">
+                            <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                    href="https://cr.indianrailways.gov.in/">
+                                    Central Railway</a>
+                            </li>
+                            <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                    href="https://ecr.indianrailways.gov.in/">East
+                                    Central
+                                    Railway</a></li>
+                            <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                    href="https://eastcoastrail.indianrailways.gov.in/">East Coast
+                                    Railway</a></li>
+                            <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                    href="https://er.indianrailways.gov.in/">Eastern Railway</a>
+                            </li>
+                            <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                    href="https://mtp.indianrailways.gov.in/">Metro
+                                    Railway
+                                    Kolkata</a></li>
+                            <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                    href="https://nr.indianrailways.gov.in/">
+                                    Northern Railway</a>
+                            </li>
+                            <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                    href="https://ncr.indianrailways.gov.in/">North
+                                    Central
+                                    Railway</a></li>
+                            <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                    href="https://ner.indianrailways.gov.in/">North
+                                    Eastern
+                                    Railway</a></li>
+                            <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                    href="https://nwr.indianrailways.gov.in/">North
+                                    Western
+                                    Railway</a></li>
+                        </div>
+                        <div class="d-md-flex-column">
+                            <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                    href="https://nfr.indianrailways.gov.in/">North
+                                    East Frontier
+                                    Railway</a></li>
+                            <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                    href="https://scr.indianrailways.gov.in/">South
+                                    Central
+                                    Railway</a></li>
+                            <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                    href="https://secr.indianrailways.gov.in/">
+                                    South East Central
+                                    Railway</a></li>
+                            <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                    href="https://swr.indianrailways.gov.in/">
+                                    South Western
+                                    Railway</a></li>
+                            <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                    href="https://sr.indianrailways.gov.in/#">
+                                    Southern Railway</a>
+                            </li>
+                            <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                    href="https://wr.indianrailways.gov.in/#">
+                                    Western Railway</a>
+                            </li>
+                            <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                    href="https://wcr.indianrailways.gov.in/"> West
+                                    Central
+                                    Railway</a></li>
+                        </div>
+
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Passenger
+                        Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                href="https://www.ftr.irctc.co.in/ftr/">
+                                Coach/Train booking</a>
+                        </li>
+                        <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                href="https://www.irctc.co.in/nget/">E-Ticketing</a></li>
+                        <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                href="https://www.indianrail.gov.in/enquiry/StaticPages/StaticEnquiry.jsp?StaticPage=index.html">PNR
+                                Status</a></li>
+                        <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                href="https://trainenquiry.com/">Train Arrival/Departure</a>
+                        </li>
+                        <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                href="https://ecatering.irctc.co.in/">E-Catering</a></li>
+                        <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                href="https://irctctourism.com/cgi-bin/rr.dll/irctc/services/rrhome.do/"> Retiring
+                                Room</a></li>
+                        <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                href="Railway_station_zone-category_wise_list.pdf">List of Zone/Category wise
+                                Railway Station<br>
+                                opened for<br>
+                                passenger services in IR (As on 01.12.2022) <i class="fa fa-file-pdf-o mx-1 text-danger" aria-hidden="true"></i> </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Freight
+                        Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                href="https://www.fois.indianrail.gov.in/RailSAHAY/index.jsp">Freight Business</a></li>
+                        <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                href="https://www.parcel.indianrail.gov.in/">Other
+                                Business</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a target="_blank" class="nav-link dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown">Manufacturing
+                        Units</a>
+                    <ul class="dropdown-menu">
+                        <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                href="https://clw.indianrailways.gov.in/"> CLW
+                                Chitranjan</a></li>
+                        <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                href="https://core.indianrailways.gov.in/">CORE
+                                Allahabad</a></li>
+                        <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                href="https://blw.indianrailways.gov.in/">BLW
+                                Varanasi</a></li>
+                        <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                href="https://plw.indianrailways.gov.in/">DMW
+                                Patiala</a></li>
+                        <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                href="https://icf.indianrailways.gov.in/"> ICF
+                                Chennai</a></li>
+                        <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                href="https://mrvc.indianrailways.gov.in/"> MRVC
+                                Mumbai</a></li>
+                        <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                href="https://rcf.indianrailways.gov.in/"> RCF
+                                Kapurthala</a></li>
+                        <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                href="https://rwf.indianrailways.gov.in/"> RWF
+                                Bangalore</a></li>
+                        <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                href="https://mcf.indianrailways.gov.in/"> MCF
+                                Raebareli</a></li>
+                        <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                href="https://rwp.indianrailways.gov.in/"> RWP
+                                Bela</a></li>
+                        <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                href="https://wpo.indianrailways.gov.in/"> WPO
+                                Patna</a></li>
+                        <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                href="https://cofmow.indianrailways.gov.in/">
+                                COFMOW</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a rel="noopener" target="_blank" class="nav-link dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown">Heritage</a>
+                    <ul class="dropdown-menu">
+                        <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                href="https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,366,1706">Indian
+                                Heritage</a></li>
+                        <li><a rel="noopener" target="_blank" class="dropdown-item"
+                                href="https://dhr.indianrailways.gov.in/">DHR</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            <div class="flex-end"> <a class="btn bg-color" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                    role="button" aria-controls="offcanvasExample">
+                    <span class="navbar-toggler-icon"></span>
+                </a></div>
+            <div class="offcanvas offcanvas-end bg-color" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 data-bs-dismiss="offcanvas" class="offcanvas-title" id="offcanvasExampleLabel">Close</h5>
+                    <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+
+                </div>
+                <div class="offcanvas-body">
+                    <nav class="navbar">
+                        <div class="container-fluid">
+                            <ul class=" navbar-nav flex-column text-white">
+                                <li class="nav-item">
+                                    <a rel="noopener" target="_blank" class="nav-link"
+                                        href="https://bharatgauravtrains.indianrailways.gov.in/">Bharat
+                                        Guarav Trains</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a rel="noopener" target="_blank" class="nav-link text-white menu-bullet"
+                                        href="https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,7,1281">Recuritment</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white menu-bullet " href="#" role="button"
+                                        data-bs-toggle="dropdown">Educational & Research
+                                    </a>
+                                    <ul class="dropdown-menu shadow-sm">
+                                        <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                                href="https://rdso.indianrailways.gov.in/">RDSO
+                                                Lucknow</a></li>
+                                        <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                                href="https://nair.indianrailways.gov.in/">NAIR
+                                                Vadodara</a></li>
+                                        <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                                href="https://iricen.gov.in/iricen/Home">IRICEN
+                                                Pune</a></li>
+                                        <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                                href="https://irieen.indianrailways.gov.in/">IRIEEN
+                                                Nasik</a></li>
+                                        <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                                href="https://irimee.indianrailways.gov.in/">IRIMEE
+                                                Jamalpur</a></li>
+                                        <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                                href="https://iriset.indianrailways.gov.in/">IRISET
+                                                Secunderabad</a></li>
+                                        <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                                href="https://iritm.indianrailways.gov.in/">IRITM
+                                                Lucknow</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a rel="noopener" target="_blank" class="nav-link text-white menu-bullet"
+                                        href="https://indianrailways.gov.in/Swachh_Bharat.htm">Swatch Bharat</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a rel="noopener" target="_blank" class="nav-link text-white menu-bullet"
+                                        href="https://indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,366,1781">CSR</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link dropdown-toggle text-white menu-bullet " href="#" role="button"
+                                        data-bs-toggle="dropdown">RTI
+                                    </a>
+                                    <ul class="dropdown-menu shadow-sm">
+                                        <li><a target="_blank" rel="noopener" class="dropdown-item"
+                                                href="https://indianrailways.gov.in/rti-act.pdf">RTI Act</a></li>
+                                        <li><a target="_blank" rel="noopener" class="dropdown-item" href="#">Proactive
+                                                Disclosure of Information
+                                                U/s4(1)(b)</a></li>
+                                        <li><a target="_blank" rel="noopener" class="dropdown-item" href="#">RTI
+                                                Circulars/ Guidelines</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                        <a rel="noopener" target="_blank" class="nav-link text-white menu-bullet"
+                                            href="https://indianrailways.gov.in/index/index.html">IR MAP</a>
+                                    </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- how to make vertical navbar -->
